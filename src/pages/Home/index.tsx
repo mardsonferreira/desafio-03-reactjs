@@ -38,7 +38,7 @@ const Home = (): JSX.Element => {
       const productsLoaded: ProductFormatted[] = response.data.map(
         (product: Product) => ({
           ...product,
-          priceFormated: formatPrice(product.price),
+          priceFormatted: formatPrice(product.price),
         })
       );
 
